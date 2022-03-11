@@ -2,7 +2,7 @@
 
 ## Link to Site
 
-https://wstaylor27.github.io/Review-Carousel/
+https://wstaylor27.github.io/Whack-A-Mole/
 
 ## Table of Contents
 
