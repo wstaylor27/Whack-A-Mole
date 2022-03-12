@@ -23,8 +23,8 @@
 
   @media screen and (max-width: 576px) {
     .square {
-        width: 7rem;
-        height: 7rem
+        width: 6rem;
+        height: 6rem
       }
     .grid {
         width: 100%;
