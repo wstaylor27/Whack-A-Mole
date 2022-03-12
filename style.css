@@ -1,4 +1,7 @@
-
+body, h1 {
+    display: block;
+    margin: 0px;
+}
 .square {
     display: flex;
     width: 200px;
@@ -21,6 +24,34 @@
     background-image: url('mole.jpg');
     background-size: cover;
 }
+/*  
+.toggle {
+    border-style: outset;
+    width: 400px;
+    background-color: rgba(76, 175, 80, 0.15);
+}
+
+.dark {
+    background-color: #243447;
+     height: 100vh; 
+    color: #bebebe;
+}
+
+.dark .grid {
+    color: #bebebe;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
+
+.light .grid {
+    color: black;
+}
+
+*/ 
 
   @media screen and (max-width: 576px) {
     .square {
