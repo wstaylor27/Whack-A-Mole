@@ -1,5 +1,6 @@
 
 .square {
+    display: flex;
     width: 200px;
     height: 200px;
     border-style: solid;
@@ -8,7 +9,7 @@
 
 .grid {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: 618px;
@@ -19,3 +20,14 @@
     background-image: url('mole.jpg');
     background-size: cover;
 }
+
+  @media screen and (max-width: 576px) {
+    .square {
+        width: 7rem;
+        height: 7rem
+      }
+    .grid {
+        width: 60%;
+        height: 60%
+    }
+    }
