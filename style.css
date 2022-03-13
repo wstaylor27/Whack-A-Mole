@@ -1,6 +1,7 @@
-body, h1 {
+html, body, h1 {
     display: block;
     margin: 0px;
+    height: 100%;
 }
 .square {
     display: flex;
@@ -25,47 +26,47 @@ body, h1 {
     background-size: cover;
 }
 
-.toggle {
+/* .toggle {
     position: absolute;
     top: 50px;
     right: 50px;
     border-style: outset;
-    width: 150px;
+    width: 270px;
     background-color: #0b1725;
-}
+} */
 
 /* Dark Mode */
-.dark {
-    background-color: #0b1725;
+/* .dark {
+    background-color: #0b1725; */
     /* height: 100vh; */
-    color: #bebebe;
-}
+    /* color: #bebebe;
+} */
 
-.dark .square {
+/* .dark .square {
     border-color: #bebebe;
-}
+} */
 
 /* Light Mode */
-.light {
+/* .light {
     background-color: white;
     color: black;
     height: 100vh;
-}
+} */
 
-.light .square {
+/* .light .square {
     border-color: black;
-}
+} */
 
 /* Styling the switch button */
-.switch {
+/* .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-}
+} */
 
 /* Hide default HTML checkbox */
-.switch input {
+/* .switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -116,13 +117,28 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+.row {
+    margin: 20px;
+    display: flex;
+}
+
+.col {
+    margin: 10px;
+} */
+
 @media screen and (max-width: 576px) {
+    html, body {
+        height: 100%;
+        margin:auto;
+    }
+
+
     .square {
         width: 6rem;
         height: 6rem
       }
     .grid {
-        width: 100%;
+        width: 90%;
         height: 100%
     }
  }
