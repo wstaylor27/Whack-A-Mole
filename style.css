@@ -1,12 +1,40 @@
-html, body, h1 {
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
     display: block;
     margin: 0px;
     height: 100%;
 }
+
+body {
+    font-family: 'Sigmar One', cursive;
+}
+
+main {
+    display: flex;  
+}
+
+aside {
+    flex: 10%;
+}
+
+section {
+    flex: 90%;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
 .square {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 33%;
+    height: 33%;
     border-style: solid;
     border-color: black;
 }
@@ -16,8 +44,8 @@ html, body, h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 618px;
-    height: 618px;
+    width: 100vh;
+    height: 100vh;
     margin: auto;
 }
 
@@ -126,19 +154,46 @@ input:checked + .slider:before {
     margin: 10px;
 } */
 
+  /* Tablets */
+  @media screen and (max-width: 992px) {
+    .square {
+        width: 13rem;
+        height: 14rem
+      }
+    .grid {
+        width: 94%;
+        height: 100%;
+    }
+ }
+
+ /* Large smartphones */
+ @media screen and (max-width: 768px) {
+    .square {
+        width: 12rem;
+        
+      }
+    .grid {
+        width: 94%;
+        height: 100%;
+    }
+ }
+
+/* Small smartphones */
 @media screen and (max-width: 576px) {
     html, body {
         height: 100%;
         margin:auto;
     }
 
-
     .square {
-        width: 6rem;
-        height: 6rem
+        width: 5rem;
+        height: 5rem
       }
     .grid {
-        width: 90%;
-        height: 100%
+        width: 94%;
+        height: 100%;
     }
  }
+
+
+
